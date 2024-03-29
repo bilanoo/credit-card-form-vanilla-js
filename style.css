@@ -47,6 +47,7 @@ body {
 }
 
 .card-details-container {
+  font-family: Space Grotesk, sans-serif;
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
@@ -63,11 +64,21 @@ body {
 }
 
 .card-back {
+  display: flex;
   background-image: url(./public/bg-card-back.png);
   @media only screen and (max-width: 600px) {
     margin-left: auto;
     margin-top: 4vh;
     margin-right: 20px;
+  }
+  .cvv2 {
+    color: #ffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 6vw;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
@@ -75,8 +86,70 @@ body {
   background-image: url(./public//bg-card-front.png);
   @media only screen and (max-width: 600px) {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     margin-left: 50px;
     margin-top: -18vw;
     margin-right: 20px;
   }
+}
+
+.circle-container {
+  display: flex;
+  gap: 8px;
+  height: fit-content;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  .big-circle {
+    width: 9vw;
+    height: 9vw;
+    background-color: #ffff;
+    border-radius: 50%;
+  }
+
+  .small-circle {
+    justify-content: center;
+    align-self: center;
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+  }
+}
+
+.card-number {
+  padding: 0;
+  margin: 0;
+  color: #ffff;
+  letter-spacing: 0.2rem;
+  margin-left: 20px;
+  margin-top: 35px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-name-expiry-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardholder-name {
+  padding: 0;
+  margin: 0;
+  color: #ffff;
+  letter-spacing: 0.02rem;
+  font-size: 0.8rem;
+  margin-left: 20px;
+  width: fit-content;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.expiry-date {
+  color: #ffff;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
 }
